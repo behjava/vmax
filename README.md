@@ -1,2 +1,1 @@
-# vmax
-vmax
+# Read the vmax.md file.
