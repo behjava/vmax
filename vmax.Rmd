@@ -98,9 +98,9 @@ par(mfrow=c(1,2))
 rbPal <- colorRampPalette(c('yellow','red'))
 data$Col <- rbPal(10)[as.numeric(cut(data$vmaxs,breaks = 10))]
 
-with(data,plot(mabs, vmaxg, col=data$Col, xlim = c(-15,-23), cex=2, pch=16, xlab = 'B (mag)', ylab = 'Gas vmax (km/s)'))
+with(data,plot(mabs, vmaxg, col=data$Col, xlim = c(-15,-23), cex=1, pch=16, xlab = 'B (mag)', ylab = 'Gas vmax (km/s)'))
 
-with(data,plot(t, vmaxg, col=data$Col, cex=2, xlim = c(-5,10), pch=16, xlab = 'T', ylab = 'Gas vmax (km/s)'))
+with(data,plot(t, vmaxg, col=data$Col, cex=1, xlim = c(-5,10), pch=16, xlab = 'T', ylab = 'Gas vmax (km/s)'))
 
 ```
 Similar to the previous figure, the gas vmax is plotted vs. absolute B mag and morphological type T. Here, the color of the points are the stellar vmax increasing from yellow to red.
