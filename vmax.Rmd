@@ -74,6 +74,7 @@ with(data,plot(mabs, vmaxs, col=data$Col, xlim = c(-15,-23), cex=1, pch=16, xlab
 with(data,plot(t, vmaxs, col=data$Col, xlim = c(-5,10), cex=1, pch=16, xlab = 'T', ylab = 'Stars vmax (km/s)'))
 
 ```
+
 In this figure, the color of the points are the gas vmax increasing from blue to green. 
 
 A general trend, though with large scatter, can be seen in the left panel of the figure above with brighter galaxies (smaller magnitudes) having larger stellar vmax. However, in this particular sample, there seems to be no significant relation between stellar vmax and the galaxies morphological types, which requires further investigations.  
@@ -103,6 +104,7 @@ with(data,plot(mabs, vmaxg, col=data$Col, xlim = c(-15,-23), cex=1, pch=16, xlab
 with(data,plot(t, vmaxg, col=data$Col, cex=1, xlim = c(-5,10), pch=16, xlab = 'T', ylab = 'Gas vmax (km/s)'))
 
 ```
+
 Similar to the previous figure, the gas vmax is plotted vs. absolute B mag and morphological type T. Here, the color of the points are the stellar vmax increasing from yellow to red.
 
 As expected, the trend in gas vmax vs. B mag is similar to that of stellar vmax.
