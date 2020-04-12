@@ -69,9 +69,9 @@ par(mfrow=c(1,2))
 rbPal <- colorRampPalette(c('blue','green'))
 data$Col <- rbPal(10)[as.numeric(cut(data$vmaxg,breaks = 10))]
 
-with(data,plot(mabs, vmaxs, col=data$Col, xlim = c(-15,-23), cex=2, pch=16, xlab = 'B (mag)', ylab = 'Stars vmax (km/s)'))
+with(data,plot(mabs, vmaxs, col=data$Col, xlim = c(-15,-23), cex=1, pch=16, xlab = 'B (mag)', ylab = 'Stars vmax (km/s)'))
 
-with(data,plot(t, vmaxs, col=data$Col, xlim = c(-5,10), cex=2, pch=16, xlab = 'T', ylab = 'Stars vmax (km/s)'))
+with(data,plot(t, vmaxs, col=data$Col, xlim = c(-5,10), cex=1, pch=16, xlab = 'T', ylab = 'Stars vmax (km/s)'))
 ```
 
 <img src="vmax_files/figure-markdown_github/fig2-1.png" style="display: block; margin: auto;" /> In this figure, the color of the points are the gas vmax increasing from blue to green.
@@ -126,9 +126,9 @@ par(mfrow=c(1,2))
 rbPal <- colorRampPalette(c('yellow','red'))
 data$Col <- rbPal(10)[as.numeric(cut(data$vmaxs,breaks = 10))]
 
-with(data,plot(mabs, vmaxg, col=data$Col, xlim = c(-15,-23), cex=2, pch=16, xlab = 'B (mag)', ylab = 'Gas vmax (km/s)'))
+with(data,plot(mabs, vmaxg, col=data$Col, xlim = c(-15,-23), cex=1, pch=16, xlab = 'B (mag)', ylab = 'Gas vmax (km/s)'))
 
-with(data,plot(t, vmaxg, col=data$Col, cex=2, xlim = c(-5,10), pch=16, xlab = 'T', ylab = 'Gas vmax (km/s)'))
+with(data,plot(t, vmaxg, col=data$Col, cex=1, xlim = c(-5,10), pch=16, xlab = 'T', ylab = 'Gas vmax (km/s)'))
 ```
 
 <img src="vmax_files/figure-markdown_github/fig3-1.png" style="display: block; margin: auto;" /> Similar to the previous figure, the gas vmax is plotted vs. absolute B mag and morphological type T. Here, the color of the points are the stellar vmax increasing from yellow to red.
@@ -181,7 +181,7 @@ We can also investigate the statistical relation between stellar and gas vmax:
 rbPal <- colorRampPalette(c('blue','red'))
 data$Col <- rbPal(10)[as.numeric(cut(data$mabs,breaks = 10))]
 
-with(data,scatter.smooth(vmaxg, vmaxs, col=data$Col, cex=2, pch=16, xlab = 'Gas vmax (km/s)', ylab = 'Stellar vmax (km/s)', lpars =list(col = "black", lwd = 5)))
+with(data,scatter.smooth(vmaxg, vmaxs, col=data$Col, cex=1, pch=16, xlab = 'Gas vmax (km/s)', ylab = 'Stellar vmax (km/s)', lpars =list(col = "black", lwd = 3)))
 ```
 
 <img src="vmax_files/figure-markdown_github/fig34-1.png" style="display: block; margin: auto;" />

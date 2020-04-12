@@ -69,9 +69,9 @@ par(mfrow=c(1,2))
 rbPal <- colorRampPalette(c('blue','green'))
 data$Col <- rbPal(10)[as.numeric(cut(data$vmaxg,breaks = 10))]
 
-with(data,plot(mabs, vmaxs, col=data$Col, xlim = c(-15,-23), cex=2, pch=16, xlab = 'B (mag)', ylab = 'Stars vmax (km/s)'))
+with(data,plot(mabs, vmaxs, col=data$Col, xlim = c(-15,-23), cex=1, pch=16, xlab = 'B (mag)', ylab = 'Stars vmax (km/s)'))
 
-with(data,plot(t, vmaxs, col=data$Col, xlim = c(-5,10), cex=2, pch=16, xlab = 'T', ylab = 'Stars vmax (km/s)'))
+with(data,plot(t, vmaxs, col=data$Col, xlim = c(-5,10), cex=1, pch=16, xlab = 'T', ylab = 'Stars vmax (km/s)'))
 
 ```
 In this figure, the color of the points are the gas vmax increasing from blue to green. 
@@ -128,7 +128,7 @@ We can also investigate the statistical relation between stellar and gas vmax:
 rbPal <- colorRampPalette(c('blue','red'))
 data$Col <- rbPal(10)[as.numeric(cut(data$mabs,breaks = 10))]
 
-with(data,scatter.smooth(vmaxg, vmaxs, col=data$Col, cex=2, pch=16, xlab = 'Gas vmax (km/s)', ylab = 'Stellar vmax (km/s)', lpars =list(col = "black", lwd = 5)))
+with(data,scatter.smooth(vmaxg, vmaxs, col=data$Col, cex=1, pch=16, xlab = 'Gas vmax (km/s)', ylab = 'Stellar vmax (km/s)', lpars =list(col = "black", lwd = 3)))
 
 cor.test(data$vmaxs, data$vmaxg, method=c("pearson"))
 
